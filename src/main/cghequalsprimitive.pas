@@ -1,3 +1,8 @@
+//
+// Copyright (c) 2011. Uli Fuchs <ufuchs@gmx.com>
+// Released under the terms of the GNU GPL v2.0.
+//
+
 unit CghEqualsPrimitive;
 
 {$mode objfpc}{$H+}
@@ -7,20 +12,40 @@ interface
 uses
   Classes, SysUtils;
 
-// Boolean
-function areEqual(This : Boolean; That : Boolean) : Boolean; overload;
+////////////////////////////////////////////////////////////////////////////////
+// boolean data types
+////////////////////////////////////////////////////////////////////////////////
 
-// Byte
+function areEqual(This : Boolean; That : Boolean) : Boolean; overload;
+function areEqual(This : ByteBool; That : ByteBool) : Boolean; overload;
+function areEqual(This : WordBool; That : WordBool) : Boolean; overload;
+function areEqual(This : LongBool; That : LongBool) : Boolean; overload;
+
+////////////////////////////////////////////////////////////////////////////////
+// integer data types
+////////////////////////////////////////////////////////////////////////////////
+
 function areEqual(This : Byte; That : Byte) : Boolean; overload;
-// Integer
+function areEqual(This : ShortInt; That : ShortInt) : Boolean; overload;
+function areEqual(This : Word; That : Word) : Boolean; overload;
+function areEqual(This : SmallInt; That : SmallInt) : Boolean; overload;
+function areEqual(This : Cardinal; That : Cardinal) : Boolean; overload;
 function areEqual(This : Integer; That : Integer) : Boolean; overload;
-// Int64
 function areEqual(This : Int64; That : Int64) : Boolean; overload;
+function areEqual(This : UInt64; That : UInt64) : Boolean; overload;
+
+////////////////////////////////////////////////////////////////////////////////
+// floating point data types
+////////////////////////////////////////////////////////////////////////////////
 
 // Single
 function areEqual(This : Single; That : Single) : Boolean; overload;
 // Double
 function areEqual(This : Double; That : Double) : Boolean; overload;
+
+////////////////////////////////////////////////////////////////////////////////
+// string and character data types
+////////////////////////////////////////////////////////////////////////////////
 
 // Char
 function areEqual(This : Char; That : Char) : Boolean; overload;
@@ -28,6 +53,10 @@ function areEqual(This : Char; That : Char) : Boolean; overload;
 function areEqual(This : String; That : String) : Boolean; overload;
 
 implementation
+
+////////////////////////////////////////////////////////////////////////////////
+// boolean data types
+////////////////////////////////////////////////////////////////////////////////
 
 //
 // Boolean
@@ -37,14 +66,70 @@ begin
   Result := This = That;
 end;
 
+//
+// ByteBool
+//
+function areEqual(This : ByteBool; That : ByteBool) : Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// WordBool
+//
+function areEqual(This: WordBool; That: WordBool): Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// LongBool
+//
+function areEqual(This: LongBool; That: LongBool): Boolean;
+begin
+  Result := This = That;
+end;
+
 ////////////////////////////////////////////////////////////////////////////////
-// numeric related
+// integer data types
 ////////////////////////////////////////////////////////////////////////////////
 
 //
 // Byte
 //
 function areEqual(This : Byte; That : Byte) : Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// ShortInt
+//
+function areEqual(This: ShortInt; That: ShortInt): Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// Word
+//
+function areEqual(This: Word; That: Word): Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// SmallInt
+//
+function areEqual(This: SmallInt; That: SmallInt): Boolean;
+begin
+  Result := This = That;
+end;
+
+//
+// Cardinal
+//
+function areEqual(This: Cardinal; That: Cardinal): Boolean;
 begin
   Result := This = That;
 end;
@@ -64,6 +149,18 @@ function areEqual(This : Int64; That : Int64) : Boolean;
 begin
   Result := This = That;
 end;
+
+//
+// UInt64
+//
+function areEqual(This: UInt64; That: UInt64): Boolean;
+begin
+  Result := This = That;
+end;
+
+////////////////////////////////////////////////////////////////////////////////
+// floating point data types
+////////////////////////////////////////////////////////////////////////////////
 
 //
 // Single
@@ -126,7 +223,7 @@ begin
 end;
 
 ////////////////////////////////////////////////////////////////////////////////
-// string related
+// string and character data types
 ////////////////////////////////////////////////////////////////////////////////
 
 //
