@@ -49,22 +49,21 @@
         <Filename Value="TestCodeGenHelpers.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TestCodeGenHelpers"/>
-        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="39" Y="17"/>
-        <UsageCount Value="40"/>
-        <Loaded Value="True"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="41"/>
       </Unit0>
       <Unit1>
         <Filename Value="src/test/testcghequalsprimitive.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TestCghEqualsPrimitive"/>
-        <EditorIndex Value="3"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="57" Y="8"/>
-        <UsageCount Value="39"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -74,7 +73,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="29"/>
-        <UsageCount Value="40"/>
+        <UsageCount Value="41"/>
         <Bookmarks Count="1">
           <Item0 X="1" Y="147" ID="7"/>
         </Bookmarks>
@@ -86,30 +85,25 @@
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="10"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="36"/>
       </Unit3>
       <Unit4>
         <Filename Value="src/main/cghequalscomplex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="CghEqualsComplex"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="31"/>
-        <CursorPos X="5" Y="39"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="23"/>
       </Unit4>
       <Unit5>
         <Filename Value="src/test/testcghequalscomplex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TestCghEqualsComplex"/>
-        <EditorIndex Value="4"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="31" Y="8"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="22"/>
       </Unit5>
     </Units>
   </ProjectOptions>

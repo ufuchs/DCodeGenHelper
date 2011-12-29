@@ -1,3 +1,8 @@
+//
+// Copyright (c) 2011. Uli Fuchs <ufuchs@gmx.com>
+// Released under the terms of the GNU GPL v2.0.
+//
+
 unit CghEqualsComplex;
 
 {$mode objfpc}{$H+}
@@ -35,7 +40,8 @@ begin
 
   Result := (This <> nil) and (That <> nil);
 
-  if (not Result) then Exit;
+  if (not Result) then
+    Exit;
 
   // 'This as This.ClassType' calls the true class method 'Equals'
   Result := (This as This.ClassType).Equals(That);
