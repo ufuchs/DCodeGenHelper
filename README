@@ -1,0 +1,19 @@
+Maintaining legacy code is not that whereof one is dreaming.
+
+In this case old Object Pascal code.
+
+Introducing a code generator to simplify the work is only the half way.
+
+Because Object Pascal is missing an 'equals' method.
+
+So I have built 'equals' methods for most data types.
+
+Maybe it can help somebody beside myself yet...
+
+Best regards, Uli
+
+
+
+
+
+
